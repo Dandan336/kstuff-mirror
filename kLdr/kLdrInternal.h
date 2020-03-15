@@ -85,6 +85,8 @@ extern "C" {
  * @{
  */
 
+KI32 kldrModLXDoCall(KUPTR uEntrypoint, KUPTR uHandle, KU32 uOp, void *pvReserved);
+KI32 kldrModPEDoCall(KUPTR uEntrypoint, KUPTR uHandle, KU32 uOp, void *pvReserved);
 
 /**
  * The state of a dynamic loader module.
