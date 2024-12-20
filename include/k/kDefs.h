@@ -196,6 +196,8 @@
 #define K_ARCH_RISCV_64         (13 | K_ARCH_BIT_64 | K_ARCH_END_LITTLE)
 /** 64-bit RISC-V, big endian. */
 #define K_ARCH_RISCV_64_BE      (13 | K_ARCH_BIT_64 | K_ARCH_END_BIG)
+/** 64-bit LoongArch. */
+#define K_ARCH_LOONGARCH_64     (14 | K_ARCH_BIT_64 | K_ARCH_END_LITTLE)
 /** The end of the valid architecture values (exclusive). */
 #define K_ARCH_MAX              (12+1)
 /** @} */
@@ -222,6 +224,8 @@
 #  define K_ARCH    K_ARCH_PARISC_64
 # elif defined(__hppa__)
 #  define K_ARCH    K_ARCH_PARISC_32
+# elif defined(__loongarch64)
+#  define K_ARCH    K_ARCH_LOONGARCH_64
 # elif defined(__m68k__)
 #  define K_ARCH    K_ARCH_M68K
 # elif defined(__mips64)
